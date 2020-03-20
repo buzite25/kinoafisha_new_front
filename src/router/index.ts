@@ -33,7 +33,7 @@ function castIdRouteParamForFilmComponent(route: Route) {
 }
 
 function castWidgetProps(route: Route) {
-  console.log(route)
+  //console.log(route)
   return {
     //width: Number(route.query.width || 300),
     //height: Number(route.query.height || 400)

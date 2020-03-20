@@ -87,14 +87,14 @@ export default {
     give_like : function (reason) {
       this.show_like_section = !this.show_like_section
       if(this.like_gived) return //нельзя дать много лайков одному фильму
-      console.log("give_like", reason)
+      //console.log("give_like", reason)
       this.like_gived = true
       //todo Like2Server
     },
     give_dislike : function (reason) {
       this.show_dislike_section = !this.show_dislike_section
       if(this.dislike_gived) return //нельзя дать много дизлайков одному фильму
-      console.log("give_dislike", reason)
+      //console.log("give_dislike", reason)
       this.dislike_gived = true
       //todo dislike2Server
     }

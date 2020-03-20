@@ -6,7 +6,7 @@ export const getFilmById = async (id: number) => {
     'http://kinoinfo.ru/api/film',
     { params: { id } }
   )
-  console.log(response)
+  //console.log(response)
   return response.data[0]
 }
 
@@ -20,7 +20,7 @@ export const getFilmsScheduleByСity = async (city: string) => {
     film.poster="http://posters.kinoafisha.ru/" + thousand + "/" + film.id + "-000.jpg" //TODO тут или "-001.jpg"
     return film
   })
-  console.log(films)
+  //console.log(films)
   return films
 }
 

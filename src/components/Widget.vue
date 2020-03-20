@@ -80,7 +80,7 @@ export default {
       setDescriptionFilm(film, this)
     },
     init_swiper(){
-      console.log("inited_swiper")
+      //console.log("inited_swiper")
       let film = this.films[0]
       setDescriptionFilm(film, this)
     }
