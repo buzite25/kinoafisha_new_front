@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Widget from '../components/Widget.vue'
 import { FilmModel } from "@/film-model"
 import { getFilmsScheduleByСity } from "@/api/film"
@@ -18,12 +18,11 @@ export default {
   },
   data: function () {
     return {
-      films:{}
+      films: {}
     }
   },
-  mounted() {
-    getFilmsScheduleByСity("city")
-      .then(response => (this.films = response))
+  async mounted() {
+    this.films = await getFilmsScheduleByСity("city")
   }
 }
 </script>
